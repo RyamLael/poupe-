@@ -60,6 +60,35 @@
     </main>
   </dialog>
 
+
+  <dialog id="settings-modal">
+    <main>
+      <span>
+        <img src="assets/settings-icon.png" />
+      </span>
+
+      <form id="add-settings-form" class="add-form">
+        <p id="config-mensage" class="common-text">Configure sua conta</p>
+        <div class="name-income">
+          <p class="common-text">Nome</p>
+        </div>
+        <input id="change-name" class="input" placeholder="NOME DO CARA" type="text" />
+        <div class="name-income">
+          <p class="name-income" class="common-text">Renda mensal</p>
+        </div>
+        <input id="change-monthly-income" class="input" placeholder="Renda do cara" type="number" />
+        <button class="confirm-button">
+          <p>
+            Confirmar
+          </p>
+          <img src="assets/send-icon.png" />
+        </button>
+        <a id="delete-account" href="#">Apagar conta</a>
+        <a id="reset-account" href="#">Redefinir conta'</a>
+      </form>
+    </main>
+  </dialog>
+
   <!-- Header -->
   <header>
     <img id="logo-ux" src="assets/ux-logo.svg" alt="Logo UX">
@@ -75,7 +104,7 @@
       <section class="greetings">
         <img src="assets/user-image.png">
         <div>
-          <p class="common-text">Boa tarde</p>
+          <p id="greeting-message" class="common-text"></p>
           <h1 id="username"></h1>
         </div>
       </section>

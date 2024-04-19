@@ -25,3 +25,23 @@ outcomeModal.addEventListener("mousedown", (event) => {
     outcomeModal.close();
   }
 });
+
+// Modal settings
+const settingsModal = document.getElementById("settings-modal");
+const openSettingsBtn = document.getElementById("show-settings-modal");
+
+const changeName = document.getElementById("change-name");
+const changeIncome = document.getElementById("change-monthly-income");
+
+changeName.value = sessionStorage.getItem("username");
+changeIncome.value = sessionStorage.getItem("monthlyIncome");
+
+openSettingsBtn.addEventListener("click", () => {
+  settingsModal.showModal();
+})
+
+settingsModal.addEventListener("mousedown", (event) => {
+  if (event.target === settingsModal) {
+    settingsModal.close();
+  };
+})

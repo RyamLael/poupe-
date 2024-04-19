@@ -20,6 +20,7 @@
   border-radius: 5px;
   padding: 0px 15px;
   font-size: 16px;
+  font-family: 'poppins';
 }
 
 .input::placeholder {
@@ -204,6 +205,16 @@ dialog main {
 
   border-radius: 15px;
   padding: 71px 60px 52px;
+}
+
+#delete-account {
+  color: var(--red-light-color);
+  text-decoration: none;
+}
+
+#reset-account {
+  color: var(--blue-light-color);
+  text-decoration: none;
 }
 
 dialog main span {
